@@ -492,12 +492,12 @@ params:
   title: "Renee Ramjet | Data Analytics Portfolio"
   description: Extraordinary data explorer turning messy numbers into meaningful insights. Projects, skills, and lessons from my analytics adventures.
   # staticPath: ""  # The path to serve the static files from
-  image: "/images.ind3.png"
+  image: "ind3.png"
   favicon: "/fav.png"
   author:
     name: "Renee Ramjet"
-    image: "/images.ind3.png"
-    avatar: "/images.ind3.png"
+    image: "ind3.png"
+    avatar: "ind3.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.

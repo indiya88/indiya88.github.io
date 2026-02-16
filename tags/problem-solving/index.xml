@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Problem Solving on The Practical Analyst</title>
+    <link>http://localhost:1313/tags/problem-solving/</link>
+    <description>Recent content in Problem Solving on The Practical Analyst</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/problem-solving/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Turning Noise into Narrative</title>
+      <link>http://localhost:1313/blogs/first_blog/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/first_blog/</guid>
+      <description>&lt;h2 id=&#34;the-aha-moment&#34;&gt;The &amp;ldquo;Aha!&amp;rdquo; Moment&lt;/h2&gt;&#xA;&lt;p&gt;Data has the power to tell stories, if you know how to listen. I’ve always been a problem-solver at heart, and I realized that data is the ultimate puzzle. I don&amp;rsquo;t just see numbers; I see the opportunity to take a mess of information and find the &amp;ldquo;aha!&amp;rdquo; moment that actually changes things.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-im-building&#34;&gt;What I’m Building&lt;/h2&gt;&#xA;&lt;p&gt;I’m currently deep-diving into the full data lifecycle. I’m not just learning theory; I’m mastering how to clean up chaotic datasets, apply statistical models, and build visual dashboards that make complex problems feel simple and solvable for everyone else.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

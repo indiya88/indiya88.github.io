@@ -6,8 +6,15 @@
     <description>Recent content in Blogs on The Practical Analyst</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Feb 2026 12:54:29 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Survey Secrets</title>
+      <link>http://localhost:1313/blogs/assignment2_blog/</link>
+      <pubDate>Thu, 19 Feb 2026 12:54:29 -0500</pubDate>
+      <guid>http://localhost:1313/blogs/assignment2_blog/</guid>
+      <description>&lt;h2 id=&#34;when-anonymous-data-isnt-really-anonymous&#34;&gt;When ‘Anonymous’ Data Isn’t Really Anonymous&lt;/h2&gt;&#xA;&lt;p&gt;Hey friends!&lt;/p&gt;&#xA;&lt;p&gt;Data science is amazing! We get to uncover insights, help organizations improve, and even make life a little easier for people. But with great data power comes great ethical responsibility. As Luciano Floridi explains in Chapter 4 of &lt;em&gt;The Ethics of Artificial Intelligence&lt;/em&gt;, AI represents a new form of agency that brings serious ethical challenges. (Floridi, 2023, p. 57).&lt;/p&gt;&#xA;&lt;p&gt;I’ve been exploring the ethical side of data science, and I realized that even something as simple as a post-course survey can hide tricky ethical dilemmas.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Turning Noise into Narrative</title>
       <link>http://localhost:1313/blogs/first_blog/</link>

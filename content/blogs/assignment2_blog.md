@@ -113,6 +113,22 @@ These concepts are practical guides for survey design, data collection, and repo
 
 ---
 
+## 4) Proceeding Ethically if Recommendations Are Rejected
+      
+If executive management rejects ethical recommendations, a data analyst still has professional                
+responsibilities. One ethical step is to document concerns clearly, ensuring transparency about 
+potential risks or limitations in the survey design. The analyst can also reduce harm through        
+responsible reporting by including context about bias, privacy concerns, or data quality when 
+presenting results. This supports justice and nonmaleficence by preventing unfair or misleading 
+conclusions (Floridi, 2023, pp. 61–62).
+       
+If needed, concerns can be raised through appropriate professional channels, such as a supervisor                
+or data governance process, while maintaining respect and professionalism. Even when 
+recommendations are declined, analysts can uphold ethical standards by communicating findings             
+honestly and encouraging transparency in how the data is used.
+
+---
+
 ## Conclusion: Ethics is Everyone’s Business
 
 Even a simple survey can hide a world of ethical challenges. By considering autonomy, beneficence, nonmaleficence, justice, and explicability, we protect participants, improve trust, and produce more reliable, actionable insights.

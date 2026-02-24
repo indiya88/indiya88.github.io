@@ -1,18 +1,36 @@
 ---
-title: "Turning Noise into Narrative"
 date: 2026-02-11
 draft: false
-tags: ["Data Analytics", "Problem Solving", "Strategy"]
+author: "Renee Ramjet"
+tags:
+  - Data Analytics
+  - Problem Solving
+  - Strategy
+  - Machine Learning
+
+image: /images/noise.png
+description: ""
+toc: true
 ---
 
-## The "Aha!" Moment
+## From Raw Data to Real Insight
 
-Data has the power to tell stories, if you know how to listen. I’ve always been a problem-solver at heart, and I realized that data is the ultimate puzzle. I don't just see numbers; I see the opportunity to take a mess of information and find the "aha!" moment that actually changes things.
+Data has a unique way of telling stories, but you have to know how to listen. I’ve always been a problem-solver at heart, and I’ve realized that data is the ultimate puzzle. I don’t just see rows of numbers; I see an opportunity to take a mess of information and find that “aha!” moment that actually changes the way things work.
 
-## What I’m Building
+---
 
-I’m currently deep-diving into the full data lifecycle. I’m not just learning theory; I’m mastering how to clean up chaotic datasets, apply statistical models, and build visual dashboards that make complex problems feel simple and solvable for everyone else.
+### My Approach
 
-## The Goal
+I always start by asking what question the data actually needs to answer, rather than just looking at what numbers happen to be available. From there, I dig into the grit of cleaning the data and exploring patterns, then I test my ideas with simple, effective models. My main focus is always on the finish line: presenting those insights in a way that people without a technical background can actually understand and use to make decisions.
 
-I love knowing that my work helps someone improve their life, their job, or their company. I’m driven by the win of providing a solution that works. My goal is to keep building projects where technical precision meets real-world impact—helping people make moves based on facts, not just guesses.
+---
+
+### What I’m Building
+
+Right now, I’m deep-diving into the full data lifecycle. I’m not just focused on the theory; I’m mastering the art of wrangling chaotic datasets, applying statistical models, and building visual dashboards. My goal is to take complex, messy problems and make them feel simple and solvable for everyone else.
+
+---
+
+### The Goal
+
+I love the feeling of knowing my work helps someone improve their life, their job, or their company. I’m driven by the “win” of providing a solution that actually works in the real world. I want to keep building projects where technical precision meets real-world impact—helping people move away from *gut feelings* and start making moves based on solid facts.

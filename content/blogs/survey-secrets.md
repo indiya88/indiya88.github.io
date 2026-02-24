@@ -1,6 +1,6 @@
 ---
 date: '2026-02-19T12:54:29-05:00'
-draft: true
+draft: false
 title: 'Survey Secrets'
 tags: ["data-ethics","survey design"]
 categories: ["blog"]

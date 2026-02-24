@@ -1,6 +1,8 @@
 ---
+title: "Turning Noise into Narrative"
 date: 2026-02-11
 draft: false
+tags: ["Data Analytics", "Problem Solving", "Strategy"]
 author: "Renee Ramjet"
 tags:
   - Data Analytics

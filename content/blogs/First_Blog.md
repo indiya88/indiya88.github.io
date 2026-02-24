@@ -2,20 +2,20 @@
 title: "Turning Noise into Narrative"
 date: 2026-02-11
 draft: false
-tags: ["Data Analytics", "Problem Solving", "Strategy"]
 author: "Renee Ramjet"
 tags:
   - Data Analytics
   - Problem Solving
   - Strategy
   - Machine Learning
-
 image: /images/noise.png
 description: ""
 toc: true
 ---
 
 ## From Raw Data to Real Insight
+
+![](/images/noise.png)
 
 Data has a unique way of telling stories, but you have to know how to listen. I’ve always been a problem-solver at heart, and I’ve realized that data is the ultimate puzzle. I don’t just see rows of numbers; I see an opportunity to take a mess of information and find that “aha!” moment that actually changes the way things work.
 

@@ -8,7 +8,6 @@ tags:
   - Problem Solving
   - Strategy
   - Machine Learning
-image: /images/noise.png
 description: ""
 toc: true
 ---
@@ -34,5 +33,6 @@ Right now, I’m deep-diving into the full data lifecycle. I’m not just focuse
 ---
 
 ### The Goal
+
 
 I love the feeling of knowing my work helps someone improve their life, their job, or their company. I’m driven by the “win” of providing a solution that actually works in the real world. I want to keep building projects where technical precision meets real-world impact—helping people move away from *gut feelings* and start making moves based on solid facts.

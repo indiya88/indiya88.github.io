@@ -2,7 +2,7 @@ baseURL: "https://indiya88.github.io/"
 languageCode: "en-us"
 title: "The Practical Analyst"
 theme: hugo-profile
-relativeURLs: true
+relativeURLs: false
 canonifyURLs: true
 
 # Multilingual configuration

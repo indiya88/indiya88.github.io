@@ -6,21 +6,28 @@
     <description>Recent content in Blogs on The Practical Analyst</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Feb 2026 12:54:29 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Survey Secrets</title>
-      <link>http://localhost:1313/blogs/assignment2_blog/</link>
-      <pubDate>Thu, 19 Feb 2026 12:54:29 -0500</pubDate>
-      <guid>http://localhost:1313/blogs/assignment2_blog/</guid>
+      <title></title>
+      <link>http://localhost:1313/blogs/generative_mirror/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/generative_mirror/</guid>
+      <description>&lt;h2 id=&#34;an-invitation-the-three-image-challenge&#34;&gt;An Invitation: The &amp;ldquo;Three-Image&amp;rdquo; Challenge&lt;/h2&gt;&#xA;&lt;p&gt;Before you read a single word further, I want to invite you to play a quick game. Open up your favorite AI image generator (like ChatGPT, Gemini, or Midjourney) and ask it to generate just three images for you using these exact, simple prompts:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&amp;ldquo;Generate an image of a CEO in a boardroom.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Generate an image of a person who is a nurse.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Generate an image of a generic criminal suspect.&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Take a look at the results. Did the CEO look like a particular gender or age? Did the nurse reflect a specific demographic? Did the &amp;ldquo;suspect&amp;rdquo; feel like someone you’ve seen in a movie or a news report?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blogs/survey_secrets/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/survey_secrets/</guid>
       <description>&lt;h2 id=&#34;when-anonymous-data-isnt-really-anonymous&#34;&gt;When ‘Anonymous’ Data Isn’t Really Anonymous&lt;/h2&gt;&#xA;&lt;p&gt;Hey friends!&lt;/p&gt;&#xA;&lt;p&gt;Data science is amazing! We get to uncover insights, help organizations improve, and even make life a little easier for people. But with great data power comes great ethical responsibility. As Luciano Floridi explains in Chapter 4 of &lt;em&gt;The Ethics of Artificial Intelligence&lt;/em&gt;, AI represents a new form of agency that brings serious ethical challenges. (Floridi, 2023, p. 57).&lt;/p&gt;&#xA;&lt;p&gt;I’ve been exploring the ethical side of data science, and I realized that even something as simple as a post-course survey can hide tricky ethical dilemmas.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Turning Noise into Narrative</title>
+      <title></title>
       <link>http://localhost:1313/blogs/first_blog/</link>
       <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blogs/first_blog/</guid>
-      <description>&lt;h2 id=&#34;the-aha-moment&#34;&gt;The &amp;ldquo;Aha!&amp;rdquo; Moment&lt;/h2&gt;&#xA;&lt;p&gt;Data has the power to tell stories, if you know how to listen. I’ve always been a problem-solver at heart, and I realized that data is the ultimate puzzle. I don&amp;rsquo;t just see numbers; I see the opportunity to take a mess of information and find the &amp;ldquo;aha!&amp;rdquo; moment that actually changes things.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-im-building&#34;&gt;What I’m Building&lt;/h2&gt;&#xA;&lt;p&gt;I’m currently deep-diving into the full data lifecycle. I’m not just learning theory; I’m mastering how to clean up chaotic datasets, apply statistical models, and build visual dashboards that make complex problems feel simple and solvable for everyone else.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;from-raw-data-to-real-insight&#34;&gt;From Raw Data to Real Insight&lt;/h2&gt;&#xA;&lt;p&gt;Data has a unique way of telling stories, but you have to know how to listen. I’ve always been a problem-solver at heart, and I’ve realized that data is the ultimate puzzle. I don’t just see rows of numbers; I see an opportunity to take a mess of information and find that “aha!” moment that actually changes the way things work.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;my-approach&#34;&gt;My Approach&lt;/h3&gt;&#xA;&lt;p&gt;I always start by asking what question the data actually needs to answer, rather than just looking at what numbers happen to be available. From there, I dig into the grit of cleaning the data and exploring patterns, then I test my ideas with simple, effective models. My main focus is always on the finish line: presenting those insights in a way that people without a technical background can actually understand and use to make decisions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Render Math With Mathjax</title>

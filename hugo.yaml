@@ -2,7 +2,7 @@ baseURL: "https://indiya88.github.io/"
 languageCode: "en-us"
 title: "The Practical Analyst"
 theme: hugo-profile
-relativeURLs: false
+relativeURLs: true
 canonifyURLs: true
 
 # Multilingual configuration
@@ -571,7 +571,7 @@ params:
       Fueled by coffee and curiosity, I'm an aspiring Data Analyst who thrives on solving puzzles and finding the “why” behind the numbers. I love making data useful, interesting, and even a little fun! I’m driven by continuous learning and the belief that great insights can shape smarter decisions.
 
              
-    image: ind3.png
+    image: /images/ind3.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false

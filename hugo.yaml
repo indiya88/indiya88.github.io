@@ -774,7 +774,7 @@ params:
           link: /blog/turning-noise-into-narrative/
         badges:
           - "Docker"
-          - "Niginx"
+          - "NGNIX"
           - "Grafana"
           - "Fluentbit"
        # links:
@@ -793,7 +793,7 @@ params:
           link: /blog/turning-noise-into-narrative/
         badges:
           - "HashiCorp Vault"
-          - "Nginx"
+          - "NGNIX"
           - "Secret Vault"
           - "Security"
         links:

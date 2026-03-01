@@ -9,24 +9,24 @@
     <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>http://localhost:1313/blogs/generative_mirror/</link>
-      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/generative_mirror/</guid>
-      <description>&lt;h2 id=&#34;an-invitation-the-three-image-challenge&#34;&gt;An Invitation: The &amp;ldquo;Three-Image&amp;rdquo; Challenge&lt;/h2&gt;&#xA;&lt;p&gt;Before you read a single word further, I want to invite you to play a quick game. Open up your favorite AI image generator (like ChatGPT, Gemini, or Midjourney) and ask it to generate just three images for you using these exact, simple prompts:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&amp;ldquo;Generate an image of a CEO in a boardroom.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Generate an image of a person who is a nurse.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Generate an image of a generic criminal suspect.&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Take a look at the results. Did the CEO look like a particular gender or age? Did the nurse reflect a specific demographic? Did the &amp;ldquo;suspect&amp;rdquo; feel like someone you’ve seen in a movie or a news report?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
+      <title>Anonymous or Not?</title>
       <link>http://localhost:1313/blogs/survey_secrets/</link>
       <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blogs/survey_secrets/</guid>
       <description>&lt;h2 id=&#34;when-anonymous-data-isnt-really-anonymous&#34;&gt;When ‘Anonymous’ Data Isn’t Really Anonymous&lt;/h2&gt;&#xA;&lt;p&gt;Hey friends!&lt;/p&gt;&#xA;&lt;p&gt;Data science is amazing! We get to uncover insights, help organizations improve, and even make life a little easier for people. But with great data power comes great ethical responsibility. As Luciano Floridi explains in Chapter 4 of &lt;em&gt;The Ethics of Artificial Intelligence&lt;/em&gt;, AI represents a new form of agency that brings serious ethical challenges. (Floridi, 2023, p. 57).&lt;/p&gt;&#xA;&lt;p&gt;I’ve been exploring the ethical side of data science, and I realized that even something as simple as a post-course survey can hide tricky ethical dilemmas.&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/blogs/first_blog/</link>
+      <title>The Generative Mirror: Escaping the Bias Trap Through AI Governance</title>
+      <link>http://localhost:1313/blogs/generative_mirror/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/generative_mirror/</guid>
+      <description>&lt;h2 id=&#34;an-invitation-the-three-image-challenge&#34;&gt;An Invitation: The &amp;ldquo;Three-Image&amp;rdquo; Challenge&lt;/h2&gt;&#xA;&lt;p&gt;Before you read any further, try a quick experiment. Open your favorite AI image generator and enter these three prompts:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&amp;ldquo;Generate an image of a CEO in a boardroom.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Generate an image of a person who is a nurse.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Generate an image of a generic criminal suspect.&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Now pause and look closely at what you get. Who is represented? What patterns do you notice?&lt;/p&gt;&#xA;&lt;p&gt;When I tried this myself, the results were not consistent across platforms. One tool generated a CEO who reflected a traditional corporate image of an older man leading the boardroom. Another produced an East Asian woman in the same leadership role. The contrast was revealing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Turning Noise into Narrative</title>
+      <link>http://localhost:1313/blogs/real-insight/</link>
       <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/first_blog/</guid>
+      <guid>http://localhost:1313/blogs/real-insight/</guid>
       <description>&lt;h2 id=&#34;from-raw-data-to-real-insight&#34;&gt;From Raw Data to Real Insight&lt;/h2&gt;&#xA;&lt;p&gt;Data has a unique way of telling stories, but you have to know how to listen. I’ve always been a problem-solver at heart, and I’ve realized that data is the ultimate puzzle. I don’t just see rows of numbers; I see an opportunity to take a mess of information and find that “aha!” moment that actually changes the way things work.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;my-approach&#34;&gt;My Approach&lt;/h3&gt;&#xA;&lt;p&gt;I always start by asking what question the data actually needs to answer, rather than just looking at what numbers happen to be available. From there, I dig into the grit of cleaning the data and exploring patterns, then I test my ideas with simple, effective models. My main focus is always on the finish line: presenting those insights in a way that people without a technical background can actually understand and use to make decisions.&lt;/p&gt;</description>
     </item>
     <item>

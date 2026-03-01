@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><meta charset="UTF-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href="../fav.png" type="image/gif">
+<link rel="icon" href="../images/my_logo.png" type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
 
 
 
-<meta property="og:url" content="https://indiya88.github.io/blogs/">
+<meta property="og:url" content="http://localhost:1313/blogs/">
   <meta property="og:site_name" content="The Practical Analyst">
   <meta property="og:title" content="Blogs">
   <meta property="og:description" content="Extraordinary data explorer turning messy numbers into meaningful insights. Projects, skills, and lessons from my analytics adventures.">
@@ -44,11 +44,11 @@
 
 
   
-    <link rel="alternate" hreflang="en" href="https://indiya88.github.io/blogs/" title="English">
+    <link rel="alternate" hreflang="en" href="http://localhost:1313/blogs/" title="English">
   
-    <link rel="alternate" hreflang="es" href="https://indiya88.github.io/es/blogs/" title="Español">
+    <link rel="alternate" hreflang="es" href="http://localhost:1313/es/blogs/" title="Español">
   
-    <link rel="alternate" hreflang="fr" href="https://indiya88.github.io/fr/blogs/" title="Français">
+    <link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/blogs/" title="Français">
   
   
   <meta property="og:locale" content="en">
@@ -169,7 +169,7 @@ Blogs | The Practical Analyst
             
             <a class="navbar-brand primary-font text-wrap" href="../">
                 
-                <img src="../fav.png" width="30" height="30"
+                <img src="../images/my_logo.png" width="30" height="30"
                     class="d-inline-block align-top">
                 Renee Ramjet
                 
@@ -350,17 +350,20 @@ Blogs | The Practical Analyst
                 
                 <div class="card-header">
                     <a href="../blogs/generative_mirror/">
-                        <img src="../images/generative-mirror.png" class="card-img-top" alt="Exploring Bias, Ethics, and Governance">
+                        <img src="../images/generative-mirror.png" class="card-img-top" alt="The Generative Mirror: Escaping the Bias Trap Through AI Governance">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-4 shadow-sm">
                     <a href="../blogs/generative_mirror/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Exploring Bias, Ethics, and Governance">Exploring Bias, Ethics, …</h5>
+                        <h5 class="card-title bg-transparent" title="The Generative Mirror: Escaping the Bias Trap Through AI Governance">The Generative Mirror: …</h5>
                     </a>
                     <div class="card-text secondary-font">
                         <p><h2 id="an-invitation-the-three-image-challenge">An Invitation: The &ldquo;Three-Image&rdquo; Challenge</h2>
-<p>Before you read a single word further, I want to invite you to play a quick game. Open up your favorite AI image generator (like ChatGPT, Gemini, or Midjourney) and ask it to generate just three images for you using these exact, simple prompts: …</p></p>
+<p>Before you read any further, try a quick experiment. Open your favorite AI image generator and enter these three prompts:</p>
+<ol>
+<li>&ldquo;Generate an image of a CEO in a boardroom.&rdquo;</li>
+<li>&ldquo;Generate an image of a person who is a nurse.&rdquo; …</li></ol></p>
                     </div>
                 </div>
                 <div class="mt-auto post-footer bg-transparent py-3">
@@ -375,7 +378,7 @@ Blogs | The Practical Analyst
                 
                 <div class="card-header">
                     <a href="../blogs/real-insight/">
-                        <img src="../images/action-insight.png" class="card-img-top" alt="Turning Noise into Narrative">
+                        <img src="../images/context.png" class="card-img-top" alt="Turning Noise into Narrative">
                     </a>
                 </div>
                 
@@ -523,8 +526,8 @@ Blogs | The Practical Analyst
         <div class="col-md-4 text-center">
             
                 <div class="pb-2">
-                    <a href="https://indiya88.github.io/" title="The Practical Analyst">
-                        <img alt="Footer logo" src="../fav.png"
+                    <a href="http://localhost:1313/" title="The Practical Analyst">
+                        <img alt="Footer logo" src="../images/my_logo.png"
                             height="40px" width="40px">
                     </a>
                 </div>
@@ -546,17 +549,11 @@ Blogs | The Practical Analyst
 </div>
 </footer><script src="../bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
+    if (document.body.className.includes("light")) {
         document.documentElement.classList.add('dark');
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-        document.documentElement.classList.remove('dark');
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.classList.add('dark');
-        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
     }
-
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {

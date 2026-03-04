@@ -340,17 +340,37 @@ High-Availability Vault Architecture | The Practical Analyst
           
           <article class="page-content  p-2">
           <h2 id="overview">Overview</h2>
-<p>Engineered a high-availability <strong>HashiCorp Vault</strong> cluster backed by <strong>Consul</strong> and secured behind a multi-stage <strong>NGINX reverse proxy</strong> with SSL/TLS termination.</p>
-<p>Implemented <strong>Shamir seal initialization (5 shares, threshold 3)</strong> and identity-based access controls to ensure secure secrets governance.</p>
+<p>Engineered a <strong>high-availability HashiCorp Vault cluster</strong> backed by <strong>Consul</strong> and secured behind a <strong>multi-stage NGINX reverse proxy</strong>. Designed to ensure resilient secret management, <strong>encrypted communication</strong>, and <strong>identity-based access control</strong> across distributed services.</p>
+<p>This project emphasized <strong>redundancy</strong>, <strong>fault tolerance</strong>, and secure secret governance.</p>
+<hr>
+<h2 id="architecture">Architecture</h2>
+<ul>
+<li><strong>Vault</strong> deployed in <strong>server mode</strong></li>
+<li><strong>Consul</strong> backend for <strong>HA storage</strong></li>
+<li><strong>Shamir secret sharing</strong> initialization</li>
+<li><strong>Reverse proxy</strong> architecture with <strong>SSL/TLS</strong></li>
+<li>Controlled <strong>container networking</strong></li>
+<li><strong>Root</strong> and <strong>userpass</strong> authentication methods enabled</li>
+</ul>
+<p>Vault nodes operate in <strong>active/standby</strong> mode to maintain availability.</p>
+<hr>
+<h2 id="security-controls">Security Controls</h2>
+<ul>
+<li><strong>Unseal threshold enforcement</strong> (Shamir)</li>
+<li><strong>Role-based access policies</strong></li>
+<li><strong>Encrypted inter-node communication</strong></li>
+<li><strong>Reverse proxy isolation</strong> from direct access</li>
+<li><strong>Token-based</strong> and <strong>userpass</strong> authentication</li>
+</ul>
+<hr>
+<h2 id="key-outcome">Key Outcome</h2>
+<p>Deployed a resilient <strong>secret management platform</strong> capable of maintaining continuity while enforcing <strong>identity-based controls</strong> and secure access paths.</p>
 <hr>
 <h2 id="vault-cluster-status-active-node">Vault Cluster Status (Active Node)</h2>
-<p><img src="vault-active.png" alt="Vault Active"></p>
-<hr>
-<h2 id="vault-cluster-status-standby-node">Vault Cluster Status (Standby Node)</h2>
-<p><img src="vault-standby.png" alt="Vault Standby"></p>
+<p><img src="../../images/projects/ha-vault.png" alt="Vault Active"></p>
 <hr>
 <h2 id="architecture-flow">Architecture Flow</h2>
-<p><img src="architecture.png" alt="Vault Architecture"></p>
+<p><img src="../../images/projects/traffic.png" alt="Flow Diagram"></p>
 
           </article>
         </div>
@@ -366,8 +386,10 @@ High-Availability Vault Architecture | The Practical Analyst
                 <nav id="TableOfContents">
   <ul>
     <li><a href="#overview">Overview</a></li>
+    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#security-controls">Security Controls</a></li>
+    <li><a href="#key-outcome">Key Outcome</a></li>
     <li><a href="#vault-cluster-status-active-node">Vault Cluster Status (Active Node)</a></li>
-    <li><a href="#vault-cluster-status-standby-node">Vault Cluster Status (Standby Node)</a></li>
     <li><a href="#architecture-flow">Architecture Flow</a></li>
   </ul>
 </nav>

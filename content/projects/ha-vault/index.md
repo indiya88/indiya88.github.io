@@ -12,24 +12,47 @@ _build:
 
 ## Overview
 
-Engineered a high-availability **HashiCorp Vault** cluster backed by **Consul** and secured behind a multi-stage **NGINX reverse proxy** with SSL/TLS termination.
+Engineered a **high-availability HashiCorp Vault cluster** backed by **Consul** and secured behind a **multi-stage NGINX reverse proxy**. Designed to ensure resilient secret management, **encrypted communication**, and **identity-based access control** across distributed services.
 
-Implemented **Shamir seal initialization (5 shares, threshold 3)** and identity-based access controls to ensure secure secrets governance.
+This project emphasized **redundancy**, **fault tolerance**, and secure secret governance.
+
+---
+
+## Architecture
+
+- **Vault** deployed in **server mode**
+- **Consul** backend for **HA storage**
+- **Shamir secret sharing** initialization
+- **Reverse proxy** architecture with **SSL/TLS**
+- Controlled **container networking**
+- **Root** and **userpass** authentication methods enabled
+
+Vault nodes operate in **active/standby** mode to maintain availability.
+
+---
+
+## Security Controls
+
+- **Unseal threshold enforcement** (Shamir)
+- **Role-based access policies**
+- **Encrypted inter-node communication**
+- **Reverse proxy isolation** from direct access
+- **Token-based** and **userpass** authentication
+
+---
+
+## Key Outcome
+
+Deployed a resilient **secret management platform** capable of maintaining continuity while enforcing **identity-based controls** and secure access paths.
 
 ---
 
 ## Vault Cluster Status (Active Node)
 
-![Vault Active](vault-active.png)
-
----
-
-## Vault Cluster Status (Standby Node)
-
-![Vault Standby](vault-standby.png)
+![Vault Active](/images/projects/ha-vault.png)
 
 ---
 
 ## Architecture Flow
 
-![Vault Architecture](architecture.png)
+![Flow Diagram](/images/projects/traffic.png)

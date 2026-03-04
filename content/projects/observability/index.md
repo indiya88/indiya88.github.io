@@ -12,27 +12,58 @@ _build:
 
 ## Overview
 
-Designed a secure, containerized observability architecture using **NGINX reverse proxies** with automated **SSL/TLS termination**.  
+Designed and deployed a **secure, containerized observability architecture** to centralize system telemetry and transform infrastructure logs into **actionable insights**. Implemented an **NGINX reverse-proxy gateway** with **SSL/TLS termination** and integrated **Fluent Bit sidecars** for structured log ingestion into **Loki**.
 
-Deployed a **Loki–Grafana stack** integrated with **Fluent Bit sidecars** to centralize log aggregation, analyze system behavior, and transform infrastructure telemetry into actionable operational insights.
-
----
-
-## Key Components
-
-- NGINX reverse proxy with TLS termination  
-- Loki centralized log storage  
-- Grafana dashboards for system monitoring  
-- Fluent Bit log shipping and parsing  
+This project focused on building a resilient monitoring foundation while maintaining controlled access to log endpoints.
 
 ---
 
 ## Architecture
 
-![Architecture](architecture.png)
+- **NGINX reverse proxy** with **SSL/TLS termination**
+- **Fluent Bit sidecars** for log shipping
+- **Loki** for centralized log aggregation
+- **Grafana dashboards** for system monitoring
+- **Docker network segmentation** between services
+
+All external traffic is funneled through **NGINX** to prevent direct container exposure.
+
+---
+
+## Analytics Layer
+
+- Structured log ingestion via **Fluent Bit**
+- Centralized storage in **Loki**
+- **Query-based log analysis** (Grafana Explore)
+- **Real-time dashboards** in **Grafana**
+- Infrastructure telemetry transformed into **operational insight**
 
 ---
 
 ## Log Exploration Example
 
-![Grafana Logs](grafana.png)
+Example Loki query:
+
+- `{job="nginx"}`
+- `{job="nginx"} |= "Authorization"`
+- `{job="nginx"} |= "CustomUserAgent"`
+
+(Insert your **Grafana Explore → Loki** screenshot here.)
+
+---
+
+## Key Outcome
+
+Built a **secure observability pipeline** that balances **access control** with analytics, enabling insight without exposing backend services directly.
+
+---
+
+## Architecture
+
+![Architecture](/images/projects/observe-pipe.png)
+
+---
+
+## Log Exploration Example
+
+![Grafana Logs](/images/projects/nginx-logs.png)

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.155.3"><meta charset="UTF-8">
+	<meta name="generator" content="Hugo 0.155.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:url" content="https://indiya88.github.io/">
+<meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="The Practical Analyst">
   <meta property="og:title" content="The Practical Analyst">
   <meta property="og:description" content="Extraordinary data explorer turning messy numbers into meaningful insights. Projects, skills, and lessons from my analytics adventures.">
@@ -45,11 +45,11 @@
 
 
   
-    <link rel="alternate" hreflang="en" href="https://indiya88.github.io/" title="English">
+    <link rel="alternate" hreflang="en" href="http://localhost:1313/" title="English">
   
-    <link rel="alternate" hreflang="es" href="https://indiya88.github.io/es/" title="Español">
+    <link rel="alternate" hreflang="es" href="http://localhost:1313/es/" title="Español">
   
-    <link rel="alternate" hreflang="fr" href="https://indiya88.github.io/fr/" title="Français">
+    <link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/" title="Français">
   
   
   <meta property="og:locale" content="en">
@@ -1094,7 +1094,7 @@ At my core, I love turning chaos into clarity—and building solutions that are 
             <div class="col-lg-4 col-md-6 my-3">
                 <div class="card my-3 h-100" title="Zero-Trust Observability Pipeline">
                     <div class="card-head">
-                        <img class="card-img-top" src="./images/projects/observability.png" alt="Zero-Trust Observability Pipeline">
+                        <img class="card-img-top" src="./images/projects/observability-stack.png" alt="Zero-Trust Observability Pipeline">
                     </div>
                     <div class="card-body bg-transparent p-3">
                         <div class="pb-2 bg-transparent">
@@ -1135,7 +1135,7 @@ At my core, I love turning chaos into clarity—and building solutions that are 
             <div class="col-lg-4 col-md-6 my-3">
                 <div class="card my-3 h-100" title="High Availability Vault Architecture">
                     <div class="card-head">
-                        <img class="card-img-top" src="./images/projects/vault-cluster.png" alt="High Availability Vault Architecture">
+                        <img class="card-img-top" src="./images/projects/ha-vault.png" alt="High Availability Vault Architecture">
                     </div>
                     <div class="card-body bg-transparent p-3">
                         <div class="pb-2 bg-transparent">
@@ -1180,16 +1180,16 @@ At my core, I love turning chaos into clarity—and building solutions that are 
             </div>
             
             <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="From Legacy Logs to Centralized Observability">
+                <div class="card my-3 h-100" title="Zero-Trust Log Analytics Pipeline">
                     <div class="card-head">
-                        <img class="card-img-top" src="./images/projects/grafana-logs.png" alt="From Legacy Logs to Centralized Observability">
+                        <img class="card-img-top" src="./images/projects/zero-trust.png" alt="Zero-Trust Log Analytics Pipeline">
                     </div>
                     <div class="card-body bg-transparent p-3">
                         <div class="pb-2 bg-transparent">
                             
                             <span class="badge badge-secondary">Grafana</span>
                             
-                            <span class="badge badge-secondary">Tomcat</span>
+                            <span class="badge badge-secondary">Linux</span>
                             
                             <span class="badge badge-secondary">Fluentbit</span>
                             
@@ -1200,9 +1200,9 @@ At my core, I love turning chaos into clarity—and building solutions that are 
                             <span class="badge badge-secondary">Data Analysis</span>
                             
                         </div>
-                        <h5 class="card-title bg-transparent mt-1">From Legacy Logs to Centralized Observability</h5>
+                        <h5 class="card-title bg-transparent mt-1">Zero-Trust Log Analytics Pipeline</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            Built a custom Tomcat &#43; Fluent Bit hybrid container to capture, structure, and stream legacy Java application logs to a centralized Loki instance. Implemented TLS-encrypted transport and custom regex parsing to enable structured log analysis, anomaly detection, and improved visibility into system performance patterns.
+                            Engineered a zero-trust log analytics pipeline by isolating Loki behind an NGINX reverse proxy and enforcing Basic Authentication across all API endpoints. Restricted direct container access using internal Docker networking and validated security controls through real-time log analysis and HTTP status inspection.
                         </div>
                     </div>
                     
@@ -1211,6 +1211,45 @@ At my core, I love turning chaos into clarity—and building solutions that are 
                         
                         <span class="float-end">
                             <a class="btn btn-sm" href="./projects/legacy-logs/" target="_blank">
+                                View Architecture
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Dockerized OpenVPN Gateway">
+                    <div class="card-head">
+                        <img class="card-img-top" src="./images/projects/vpn-running.png" alt="Dockerized OpenVPN Gateway">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">OpenVPN</span>
+                            
+                            <span class="badge badge-secondary">Docker</span>
+                            
+                            <span class="badge badge-secondary">Security</span>
+                            
+                            <span class="badge badge-secondary">Access Control</span>
+                            
+                            <span class="badge badge-secondary">Remote Access</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Dockerized OpenVPN Gateway</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Designed and deployed a Dockerized OpenVPN gateway on a Debian server, implementing certificate-based authentication and encrypted tunneling for secure remote infrastructure access. Configured client profiles and assigned VPN IP addresses to enable a remote team in Mumbai to securely connect to the Canadian server environment.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="./projects/openVPN/" target="_blank">
                                 View Architecture
                             </a>
                         </span>
@@ -1365,7 +1404,7 @@ At my core, I love turning chaos into clarity—and building solutions that are 
         <div class="col-md-4 text-center">
             
                 <div class="pb-2">
-                    <a href="https://indiya88.github.io/" title="The Practical Analyst">
+                    <a href="http://localhost:1313/" title="The Practical Analyst">
                         <img alt="Footer logo" src="./images/my_logo.png"
                             height="40px" width="40px">
                     </a>

@@ -30,24 +30,24 @@
 
 <meta property="og:url" content="https://indiya88.github.io/projects/legacy-logs/">
   <meta property="og:site_name" content="The Practical Analyst">
-  <meta property="og:title" content="From Legacy Logs to Centralized Observability">
-  <meta property="og:description" content="Structured log ingestion pipeline using Tomcat, Fluent Bit, and Loki.">
+  <meta property="og:title" content="Zero-Trust Log Analytics Pipeline">
+  <meta property="og:description" content="Structured log ingestion pipeline, Fluent Bit, and Loki.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="projects">
     <meta property="article:published_time" content="2026-03-02T00:00:00+00:00">
     <meta property="article:modified_time" content="2026-03-02T00:00:00+00:00">
-    <meta property="article:tag" content="Tomcat">
-    <meta property="article:tag" content="Fluent Bit">
+    <meta property="article:tag" content="NGINX">
     <meta property="article:tag" content="Loki">
-    <meta property="article:tag" content="Grafana">
-    <meta property="article:tag" content="Log Parsing">
-    <meta property="article:tag" content="Data Analysis">
+    <meta property="article:tag" content="Docker">
+    <meta property="article:tag" content="Security">
+    <meta property="article:tag" content="Log Analysis">
+    <meta property="article:tag" content="Zero Trust">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="From Legacy Logs to Centralized Observability">
-  <meta name="twitter:description" content="Structured log ingestion pipeline using Tomcat, Fluent Bit, and Loki.">
+  <meta name="twitter:title" content="Zero-Trust Log Analytics Pipeline">
+  <meta name="twitter:description" content="Structured log ingestion pipeline, Fluent Bit, and Loki.">
 
 
 
@@ -122,7 +122,7 @@
 
 
 
-<meta name="description" content="Structured log ingestion pipeline using Tomcat, Fluent Bit, and Loki.">
+<meta name="description" content="Structured log ingestion pipeline, Fluent Bit, and Loki.">
 <link rel="stylesheet" href="../../css/single.css">
 
 
@@ -133,7 +133,7 @@
   
 
   <title>
-From Legacy Logs to Centralized Observability | The Practical Analyst
+Zero-Trust Log Analytics Pipeline | The Practical Analyst
 
   </title>
 </head>
@@ -325,7 +325,7 @@ From Legacy Logs to Centralized Observability | The Practical Analyst
       <div class="col-sm-12 col-md-12 col-lg-9">
         <div class="pr-lg-4">
           <div class="title mb-5">
-            <h1 class="text-center mb-4">From Legacy Logs to Centralized Observability</h1>
+            <h1 class="text-center mb-4">Zero-Trust Log Analytics Pipeline</h1>
             <div class="text-center">
               
               Mar 2, 2026
@@ -340,14 +340,47 @@ From Legacy Logs to Centralized Observability | The Practical Analyst
           
           <article class="page-content  p-2">
           <h2 id="overview">Overview</h2>
-<p>Built a custom <strong>Tomcat + Fluent Bit hybrid container</strong> to capture, structure, and stream legacy Java application logs to a centralized <strong>Loki</strong> instance.</p>
-<p>Implemented <strong>TLS-encrypted streaming</strong> and custom <strong>regex parsing</strong> to enable structured log analysis and improved visibility into system performance patterns.</p>
+<p>Engineered a hardened <strong>log analytics gateway</strong> by isolating <strong>Loki</strong> behind an authenticated <strong>NGINX reverse proxy</strong>. Eliminated direct container exposure and enforced <strong>access control</strong> across all Loki API endpoints to implement a <strong>zero-trust ingestion model</strong>.</p>
+<p>This project focused on securing the analytics pipeline itself.</p>
+<hr>
+<h2 id="security-architecture">Security Architecture</h2>
+<ul>
+<li><strong>Loki not publicly exposed</strong> (no direct port publishing)</li>
+<li><strong>NGINX</strong> as the <strong>single access gateway</strong></li>
+<li><strong>Basic Authentication</strong> enforced on:
+<ul>
+<li><code>/loki/api/v1/push</code></li>
+<li><code>/loki/api/v1/labels</code></li>
+<li><code>/loki/api/v1/query</code></li>
+<li><code>/loki/api/v1/series</code></li>
+</ul>
+</li>
+<li>Internal <strong>Docker network isolation</strong> restricting container communication</li>
+<li>No direct backend service access</li>
+</ul>
+<p>All ingestion and queries must pass through <strong>authentication enforcement</strong>.</p>
+<hr>
+<h2 id="validation--testing">Validation &amp; Testing</h2>
+<ul>
+<li>Verified enforcement using access logs:
+<ul>
+<li>Expected <strong>401 Unauthorized</strong> responses without valid credentials</li>
+</ul>
+</li>
+<li>Confirmed all Loki requests were routed through <strong>NGINX</strong></li>
+<li>Validated endpoint protection for both <strong>push</strong> and <strong>query</strong> paths</li>
+</ul>
+<p>Validation confirmed through live NGINX access log monitoring (<code>docker exec -it nginx-logs tail -f /var/log/nginx/nginx-real.log</code>), where unauthorized requests returned <strong>401</strong> and authenticated requests returned <strong>200 OK</strong>.</p>
+<hr>
+<h2 id="analytics-impact">Analytics Impact</h2>
+<p>By securing ingestion endpoints, this design protects data integrity while enabling structured <strong>log analysis</strong> downstream (Grafana + Loki).</p>
+<hr>
+<h2 id="key-outcome">Key Outcome</h2>
+<p>Implemented a <strong>zero-trust enforcement layer</strong> protecting the analytics pipeline, demonstrating <strong>network segmentation</strong>, <strong>authenticated endpoints</strong>, and security-first observability design.</p>
 <hr>
 <h2 id="log-query-example">Log Query Example</h2>
-<p><img src="grafana-query.png" alt="Log Query"></p>
+<p><img src="../../images/projects/nginx-logs.png" alt="Log Query"></p>
 <hr>
-<h2 id="parsing-example">Parsing Example</h2>
-<p><img src="parsed-logs.png" alt="Parsed Logs"></p>
 
           </article>
         </div>
@@ -363,8 +396,11 @@ From Legacy Logs to Centralized Observability | The Practical Analyst
                 <nav id="TableOfContents">
   <ul>
     <li><a href="#overview">Overview</a></li>
+    <li><a href="#security-architecture">Security Architecture</a></li>
+    <li><a href="#validation--testing">Validation &amp; Testing</a></li>
+    <li><a href="#analytics-impact">Analytics Impact</a></li>
+    <li><a href="#key-outcome">Key Outcome</a></li>
     <li><a href="#log-query-example">Log Query Example</a></li>
-    <li><a href="#parsing-example">Parsing Example</a></li>
   </ul>
 </nav>
               </div>
@@ -377,14 +413,9 @@ From Legacy Logs to Centralized Observability | The Practical Analyst
             <ul class="tags-ul list-unstyled list-inline">
               
               
-              <li class="list-inline-item"><a href="../../tags/tomcat"
+              <li class="list-inline-item"><a href="../../tags/nginx"
                 target="_blank"
-              >Tomcat</a></li>
-              
-              
-              <li class="list-inline-item"><a href="../../tags/fluent-bit"
-                target="_blank"
-              >Fluent Bit</a></li>
+              >NGINX</a></li>
               
               
               <li class="list-inline-item"><a href="../../tags/loki"
@@ -392,19 +423,24 @@ From Legacy Logs to Centralized Observability | The Practical Analyst
               >Loki</a></li>
               
               
-              <li class="list-inline-item"><a href="../../tags/grafana"
+              <li class="list-inline-item"><a href="../../tags/docker"
                 target="_blank"
-              >Grafana</a></li>
+              >Docker</a></li>
               
               
-              <li class="list-inline-item"><a href="../../tags/log-parsing"
+              <li class="list-inline-item"><a href="../../tags/security"
                 target="_blank"
-              >Log Parsing</a></li>
+              >Security</a></li>
               
               
-              <li class="list-inline-item"><a href="../../tags/data-analysis"
+              <li class="list-inline-item"><a href="../../tags/log-analysis"
                 target="_blank"
-              >Data Analysis</a></li>
+              >Log Analysis</a></li>
+              
+              
+              <li class="list-inline-item"><a href="../../tags/zero-trust"
+                target="_blank"
+              >Zero Trust</a></li>
               
             </ul>
           </aside>
@@ -416,22 +452,22 @@ From Legacy Logs to Centralized Observability | The Practical Analyst
             <div class="social-content">
               <ul class="list-inline">
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://www.linkedin.com/feed/?shareActive=true&text=Structured%20log%20ingestion%20pipeline%20using%20Tomcat%2c%20Fluent%20Bit%2c%20and%20Loki. https%3a%2f%2findiya88.github.io%2fprojects%2flegacy-logs%2f">
+                  <a target="_blank" href="https://www.linkedin.com/feed/?shareActive=true&text=Structured%20log%20ingestion%20pipeline%2c%20Fluent%20Bit%2c%20and%20Loki. https%3a%2f%2findiya88.github.io%2fprojects%2flegacy-logs%2f">
                     <i class="fab fa-linkedin"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='https://twitter.com/share?text=From%20Legacy%20Logs%20to%20Centralized%20Observability&url=https%3a%2f%2findiya88.github.io%2fprojects%2flegacy-logs%2f&hashtags=Tomcat%2cFluent%20Bit%2cLoki%2cGrafana%2cLog%20Parsing%2cData%20Analysis'>
+                  <a target="_blank" href='https://twitter.com/share?text=Zero-Trust%20Log%20Analytics%20Pipeline&url=https%3a%2f%2findiya88.github.io%2fprojects%2flegacy-logs%2f&hashtags=NGINX%2cLoki%2cDocker%2cSecurity%2cLog%20Analysis%2cZero%20Trust'>
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=From%20Legacy%20Logs%20to%20Centralized%20Observability: https%3a%2f%2findiya88.github.io%2fprojects%2flegacy-logs%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Zero-Trust%20Log%20Analytics%20Pipeline: https%3a%2f%2findiya88.github.io%2fprojects%2flegacy-logs%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject=From%20Legacy%20Logs%20to%20Centralized%20Observability&amp;body=Check%20out%20this%20site https%3a%2f%2findiya88.github.io%2fprojects%2flegacy-logs%2f'>
+                  <a target="_blank" href='mailto:?subject=Zero-Trust%20Log%20Analytics%20Pipeline&amp;body=Check%20out%20this%20site https%3a%2f%2findiya88.github.io%2fprojects%2flegacy-logs%2f'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>

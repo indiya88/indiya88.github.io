@@ -9,13 +9,13 @@ _build:
   list: never
   render: always
 ---
+
 ## Overview
+
 
 Engineered a high-integrity **relational database system** simulating a multi-location retail business across **10 locations** and **400+ transactions** to generate realistic, actionable business intelligence.
 
 Focused on analyzing **revenue trends**, **inventory performance**, and **customer behavior**, transforming raw transactional data into insights that support real-world decision-making.
-
-**Key Insight:** Identified high-performing product categories driving a significant portion of total revenue, enabling opportunities for targeted inventory optimization and improved sales strategy.
 
 ---
 
@@ -60,4 +60,5 @@ Built a database project that turns raw business data into **clear, actionable i
 ---
 
 ## GitHub Repository
+
 [View Full SQL Scripts](https://github.com/indiya88/rootedearth-database)

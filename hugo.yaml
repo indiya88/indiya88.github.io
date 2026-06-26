@@ -2,441 +2,6 @@ baseURL: "https://indiya88.github.io/"
 languageCode: "en-us"
 title: "The Practical Analyst"
 theme: hugo-profile
-relativeURLs: true
-canonifyURLs: true
-
-# Multilingual configuration
-defaultContentLanguage: "en"
-defaultContentLanguageInSubdir: false
-
-languages:
-  en:
-    languageName: "English"
-    weight: 1
-    contentDir: "content"
-    menu:
-      main:
-        - identifier: blog
-          name: Blog
-          title: Blog posts
-          url: /blogs
-          weight: 1
-        # - identifier: gallery
-        #   name: Gallery
-        #   title: Image gallery
-        #   url: /gallery
-        #   weight: 2
-  es:
-    languageName: "Español"
-    weight: 2
-    contentDir: "content/es"
-    menu:
-      main:
-        - identifier: blog
-          name: Blog
-          title: Publicaciones del blog
-          url: /es/blogs
-          weight: 1
-        - identifier: gallery
-          name: Galería
-          title: Galería de imágenes
-          url: /es/gallery
-          weight: 2
-    params:
-      hero:
-        intro: "Hello my name is"
-        title: "Renee."
-        subtitle: "Data Analytics Student"
-        content: "I am a data analytics student with an interest in turning data into insights that support better decision-making. I enjoy learning how data can be used to solve real-world problems."
-        button:
-          name: "Currículum"
-      about:
-        title: "About Me"
-        content: |-
-              I am currently studying Data Analytics and building skills in data analysis, communication, and ethical use of data. Through my coursework, I am learning how to collect, analyze, and present data in a clear and meaningful way for stakeholders.
-
-              This portfolio highlights my learning journey, projects, and interests as I continue to grow in the field of data analytics.
-    
-      experience:
-        items:
-          - company: "Facebook"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Desarrolladora Senior de Software"
-                date: "Ene 2023 - presente"
-                content: "Actualmente trabajo como desarrolladora senior de software en [ejemplo org.](https://example.com) en San Francisco, CA. Estoy trabajando en un proyecto que se utilizará para ayudar a las personas a encontrar la mejor manera de moverse por la ciudad."
-                info:
-                  content: Trabajando como desarrolladora senior de software
-                featuredItems:
-                  fontAwesomeIcons:
-                    - icon: fa-brands fa-react
-                      url: https://react.dev/
-                      tooltip: Contenido de ejemplo de tooltip
-                    - icon: fab fa-x-twitter
-                      url: https://example.com
-                  customIcons:
-                    - icon: /fav.png
-                      url: "https://example.com"
-                      tooltip: Contenido de ejemplo de tooltip
-              - name: "Desarrolladora de Software"
-                date: "Ene 2022 - Dic 2023"
-                content: "Trabajé como desarrolladora de software. Trabajé en un proyecto que se utilizará para ayudar a las personas a encontrar la mejor manera de moverse por la ciudad."
-          - company: "Amazon"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Desarrolladora de Software"
-                date: "Sep 2020 - Dic 2021"
-                info:
-                  content: Trabajé como desarrolladora de software durante más de un año en Amazon.
-                content: |
-                  Actualmente trabajo como desarrolladora de software en [ejemplo org.](https://example.com) en San Francisco, CA. Estoy trabajando en un proyecto que se utilizará para ayudar a las personas a encontrar la mejor manera de moverse por la ciudad.
-
-                  - Desarrolladora backend principal de un producto.
-                  - Creé un diseño frontend para un producto.
-          - company: "Apple"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Desarrolladora Junior de Software"
-                date: "Ene 2020 - Ago 2020"
-                featuredItems:
-                  fontAwesomeIcons:
-                    - icon: fa-brands fa-react
-                      url: https://react.dev/
-                    - icon: fab fa-x-twitter
-                      url: https://example.com
-                  customIcons:
-                    - icon: /fav.png
-                      url: "https://example.com"
-                content: |
-                  Actualmente trabajo como desarrolladora de software en [ejemplo org.](https://example.com) en San Francisco, CA. Estoy trabajando en un proyecto que se utilizará para ayudar a las personas a encontrar la mejor manera de moverse por la ciudad.
-
-                  - Desarrolladora backend principal de un producto.
-                  - Creé un diseño frontend para un producto.
-          - company: "Netflix"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Diseñadora UI/UX"
-                date: "Junio 2017 - Nov 2019"
-                content: |
-                  Actualmente trabajo como desarrolladora de software en [ejemplo org.](https://example.com) en San Francisco, CA. Estoy trabajando en un proyecto que se utilizará para ayudar a las personas a encontrar la mejor manera de moverse por la ciudad.
-
-                  - Desarrolladora backend principal de un producto.
-                  - Creé un diseño frontend para un producto.
-          - company: "Google"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Diseñadora de Productos"
-                date: "Feb 2016 - Mar 2017"
-                content: "Actualmente trabajo como desarrolladora de software en [ejemplo org.](https://example.com) en San Francisco, CA. Estoy trabajando en un proyecto que se utilizará para ayudar a las personas a encontrar la mejor manera de moverse por la ciudad."
-      education:
-        items:
-          - title: "Maestría en Administración de Empresas"
-            school:
-              name: "Universidad de California, Berkeley"
-              url: "https://example.org"
-            date: "2013 - 2015"
-            GPA: "3.8 de 5.0"
-            content: |-
-              Actividades Extracurriculares
-                - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-          - title: "Licenciatura en Ciencias de la Computación"
-            school:
-              name: "Instituto Tecnológico de Massachusetts"
-              url: "https://example.org"
-            date: "2009 - 2013"
-            GPA: "3.9 de 5.0"
-            content: |-
-              Publiqué dos artículos en la Conferencia ACM SIGCHI sobre Inteligencia Artificial.
-              - [Detección de Objetos Rápida y Precisa con una Red Neuronal Convolucional](https://example.com)
-              - Detección de mascarillas faciales usando una red neuronal convolucional.
-
-              Actividades Extracurriculares
-                - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-            featuredLink:
-              enable: true
-              name: "Mi expediente académico"
-              url: "https://example.com"
-          - title: "Escuela Secundaria"
-            school:
-              name: "Escuela Secundaria Thomas Jefferson para Ciencia y Tecnología."
-              url: "https://example.org"
-            GPA: "4.2 de 5.0"
-            featuredLink:
-              enable: true
-              url: "https://example.com"
-      projects:
-        items:
-          - title: Hugo Profile
-            content: Una plantilla Hugo altamente personalizable y centrada en dispositivos móviles para portafolio personal y blog.
-            image: /images/projects/profile.png
-            featured:
-              name: Demo
-              link: https://hugo-profile.netlify.app
-            badges:
-              - "Hugo"
-              - "Bootstrap"
-              - "Javascript"
-            links:
-              - icon: fa fa-envelope
-                url: mailto:?subject=Plantilla%20Hugo%20Profile&body=Échale%20un%20vistazo:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-              - icon: fab fa-github
-                url: https://github.com/gurusabarish/hugo-profile
-              - icon: fab fa-twitter
-                url: https://twitter.com/intent/tweet?text=Échale+un+vistazo:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-          - title: Conversor de Imágenes
-            content: Una aplicación web para convertir imágenes a pdf, png a jpg, png a jpg y png a webp sin base de datos usando django.
-            image: /images/projects/converter.jpg
-            featured:
-              name: Demo
-              link: https://django-converter.herokuapp.com
-            badges:
-              - "Django"
-              - "Bootstrap"
-            links:
-              - icon: fab fa-github
-                url: https://github.com/gurusabarish/converter
-          - title: Hugo Profile V2
-            content: Una plantilla Hugo limpia y simple para portafolio personal y blog.
-            image: /images/projects/profile2.jpg
-            featured:
-              name: Demo V2
-              link: https://hugo-profile-2.netlify.app
-            badges:
-              - "Hugo"
-              - "Bootstrap"
-              - "Javascript"
-            links:
-              - icon: fab fa-github
-                url: https://github.com/gurusabarish/HugoProfileV2
-      achievements:
-        items:
-          - title: Finalista de Google Kickstart
-            content: Resolví todos los problemas con solución óptima.
-            url: https://example.com
-            image: /images/achievement.jpg
-          - title: Ganador del Hackathon de Facebook
-            content: Desarrollé un producto usando Inteligencia Artificial.
-            image: /images/achievement.jpg
-          - title: Hugo Profile
-            content: Desarrollé un tema y obtuve más de 1K descargas por mes.
-            url: "https://github.com/gurusabarish/hugo-profile"
-            image: /images/achievement.jpg
-          - title: Finalista de Microsoft Imagine
-            content: Desarrollamos un producto que puede ayudar a otros.
-          - title: Google Summer of Code
-            content: Contribuí a un proyecto de código abierto.
-            url: https://example.com
-      contact:
-        content: Mi bandeja de entrada siempre está abierta. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡haré todo lo posible para responderte!
-        btnName: Escríbeme
-  fr:
-    contentDir: "content/fr"
-    languageName: "Français"
-    weight: 3
-    menu:
-      main:
-        - identifier: blog
-          name: Blog
-          title: Articles de blog
-          url: /fr/blogs
-          weight: 1
-        - identifier: gallery
-          name: Galerie
-          title: Galerie d'images
-          url: /fr/gallery
-          weight: 2
-    params:
-      hero:
-        intro: "Bonjour, je m'appelle"
-        title: "Isabella."
-        subtitle: "Je construis des choses pour le web"
-        content: "Une développeuse passionnée d'applications web. J'ai tendance à utiliser des technologies web modernes pour créer des sites web qui ont fière allure, qui sont agréables et qui fonctionnent correctement."
-        button:
-          name: "CV"
-      about:
-        title: "À Propos de Moi"
-        content: |-
-          Je suis une développeuse de logiciels passionnée par le développement web. J'ai une formation en informatique et en mathématiques, et je m'intéresse vivement à l'intersection de la technologie et de l'art. Je travaille actuellement comme développeuse de logiciels chez [exemple org.](https://example.com) à San Francisco, CA.
-
-          Je travaille actuellement sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville.
-        skills:
-          title: "Voici quelques technologies avec lesquelles j'ai travaillé récemment:"
-      experience:
-        items:
-          - company: "Facebook"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Développeuse Senior de Logiciels"
-                date: "Jan 2023 - présent"
-                content: "Je travaille actuellement comme développeuse senior de logiciels chez [exemple org.](https://example.com) à San Francisco, CA. Je travaille sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville."
-                info:
-                  content: Travaille comme développeuse senior de logiciels
-                featuredItems:
-                  fontAwesomeIcons:
-                    - icon: fa-brands fa-react
-                      url: https://react.dev/
-                      tooltip: Exemple de contenu d'info-bulle
-                    - icon: fab fa-x-twitter
-                      url: https://example.com
-                  customIcons:
-                    - icon: /fav.png
-                      url: "https://example.com"
-                      tooltip: Exemple de contenu d'info-bulle
-              - name: "Développeuse de Logiciels"
-                date: "Jan 2022 - Déc 2023"
-                content: "J'ai travaillé comme développeuse de logiciels. J'ai travaillé sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville."
-          - company: "Amazon"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Développeuse de Logiciels"
-                date: "Sep 2020 - Déc 2021"
-                info:
-                  content: J'ai travaillé comme développeuse de logiciels pendant plus d'un an chez Amazon.
-                content: |
-                  Je travaille actuellement comme développeuse de logiciels chez [exemple org.](https://example.com) à San Francisco, CA. Je travaille sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville.
-
-                  - Développeuse backend principale pour un produit.
-                  - J'ai créé un design frontend pour un produit.
-          - company: "Apple"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Développeuse Junior de Logiciels"
-                date: "Jan 2020 - Août 2020"
-                featuredItems:
-                  fontAwesomeIcons:
-                    - icon: fa-brands fa-react
-                      url: https://react.dev/
-                    - icon: fab fa-x-twitter
-                      url: https://example.com
-                  customIcons:
-                    - icon: /fav.png
-                      url: "https://example.com"
-                content: |
-                  Je travaille actuellement comme développeuse de logiciels chez [exemple org.](https://example.com) à San Francisco, CA. Je travaille sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville.
-
-                  - Développeuse backend principale pour un produit.
-                  - J'ai créé un design frontend pour un produit.
-          - company: "Netflix"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Designer UI/UX"
-                date: "Juin 2017 - Nov 2019"
-                content: |
-                  Je travaille actuellement comme développeuse de logiciels chez [exemple org.](https://example.com) à San Francisco, CA. Je travaille sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville.
-
-                  - Développeuse backend principale pour un produit.
-                  - J'ai créé un design frontend pour un produit.
-          - company: "Google"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Designer de Produits"
-                date: "Fév 2016 - Mar 2017"
-                content: "Je travaille actuellement comme développeuse de logiciels chez [exemple org.](https://example.com) à San Francisco, CA. Je travaille sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville."
-      education:
-        items:
-          - title: "Master en Administration des Affaires"
-            school:
-              name: "Université de Californie, Berkeley"
-              url: "https://example.org"
-            date: "2013 - 2015"
-            GPA: "3.8 sur 5.0"
-            content: |-
-              Activités Extrascolaires
-                - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-          - title: "Licence en Sciences Informatiques"
-            school:
-              name: "Institut de Technologie du Massachusetts"
-              url: "https://example.org"
-            date: "2009 - 2013"
-            GPA: "3.9 sur 5.0"
-            content: |-
-              J'ai publié deux articles lors de la Conférence ACM SIGCHI sur l'Intelligence Artificielle.
-              - [Détection d'Objets Rapide et Précise avec un Réseau de Neurones Convolutifs](https://example.com)
-              - Détection de masques faciaux à l'aide d'un réseau de neurones convolutifs.
-
-              Activités Extrascolaires
-                - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-            featuredLink:
-              enable: true
-              name: "Mon dossier académique"
-              url: "https://example.com"
-          - title: "Lycée"
-            school:
-              name: "Lycée Thomas Jefferson pour les Sciences et la Technologie."
-              url: "https://example.org"
-            GPA: "4.2 sur 5.0"
-            featuredLink:
-              enable: true
-              url: "https://example.com"
-      projects:
-        items:
-          - title: Hugo Profile
-            content: Un modèle Hugo hautement personnalisable et axé sur le mobile pour portfolio personnel et blog.
-            image: /images/projects/profile.png
-            featured:
-              name: Démo
-              link: https://hugo-profile.netlify.app
-            badges:
-              - "Hugo"
-              - "Bootstrap"
-              - "Javascript"
-            links:
-              - icon: fa fa-envelope
-                url: mailto:?subject=Modèle%20Hugo%20Profile&body=Découvrez-le:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-              - icon: fab fa-github
-                url: https://github.com/gurusabarish/hugo-profile
-              - icon: fab fa-twitter
-                url: https://twitter.com/intent/tweet?text=Découvrez-le:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-          - title: Convertisseur d'Images
-            content: Une application web pour convertir des images en pdf, png en jpg, png en jpg et png en webp sans base de données en utilisant django.
-            image: /images/projects/converter.jpg
-            featured:
-              name: Démo
-              link: https://django-converter.herokuapp.com
-            badges:
-              - "Django"
-              - "Bootstrap"
-            links:
-              - icon: fab fa-github
-                url: https://github.com/gurusabarish/converter
-          - title: Hugo Profile V2
-            content: Un modèle Hugo propre et simple pour portfolio personnel et blog.
-            image: /images/projects/profile2.jpg
-            featured:
-              name: Démo V2
-              link: https://hugo-profile-2.netlify.app
-            badges:
-              - "Hugo"
-              - "Bootstrap"
-              - "Javascript"
-            links:
-              - icon: fab fa-github
-                url: https://github.com/gurusabarish/HugoProfileV2
-      achievements:
-        items:
-          - title: Finaliste Google Kickstart
-            content: J'ai résolu tous les problèmes avec une solution optimale.
-            url: https://example.com
-            image: /images/achievement.jpg
-          - title: Gagnant du Hackathon Facebook
-            content: J'ai développé un produit utilisant l'Intelligence Artificielle.
-            image: /images/achievement.jpg
-          - title: Hugo Profile
-            content: J'ai développé un thème et j'obtiens plus de 1K téléchargements par mois.
-            url: "https://github.com/gurusabarish/hugo-profile"
-            image: /images/achievement.jpg
-          - title: Finaliste Microsoft Imagine
-            content: Nous avons développé un produit qui peut aider les autres.
-          - title: Google Summer of Code
-            content: J'ai contribué à un projet open source.
-            url: https://example.com
-      contact:
-        content: Ma boîte de réception est toujours ouverte. Que vous ayez une question ou que vous vouliez simplement dire bonjour, je ferai de mon mieux pour vous répondre!
-        btnName: Écrivez-moi
 
 outputs:
   home:
@@ -449,12 +14,6 @@ outputs:
 
 enableRobotsTXT: true
 
-#services:
-  #googleAnalytics:
-    #id: G-MEASUREMENT_ID
-  #disqus:
-    #shortname: your-disqus-shortname
-
 pagination:
   pagerSize: 3
 
@@ -463,131 +22,68 @@ markup:
     renderer:
       unsafe: true
 
-# Menus:
- # main:
-   # - identifier: gallery
-    #  name: Gallery
-    #  title: Gallery
-    #  url: /gallery
-    #  weight: 2
-    #Dropdown menu
-    # - identifier: dropdown
-    #   title: Example dropdown menu
-    #   name: Dropdown
-    #   weight: 3
-    # - identifier: dropdown1
-    #   title: example dropdown 1
-    #   name: example 1
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 1
-    # - identifier: dropdown2
-    #   title: example dropdown 2
-    #   name: example 2
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 2
-
 params:
-  title: "Renee Ramjet | Data Analytics Portfolio"
-  description: Extraordinary data explorer turning messy numbers into meaningful insights. Projects, skills, and lessons from my analytics adventures.
-  # staticPath: ""  # The path to serve the static files from
+  title: "Renee Ramjet | Data Analytics & Tech Portfolio"
+  description: Data analytics student, DevOps practitioner, and SaaS founder building tools that turn messy data into clear decisions.
   profile_image: "/images/ind3.png"
   favicon: "/images/my_logo.png"
 
-  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
-  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
-  # Note the lack of "" in true, it should be of boolean type.
   useBootstrapCDN: false
-
-  # If you want to load dynamically responsive images from Cloudinary
-  # This requires your images to be uploaded + hosted on Cloudinary
-  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
-  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
-
-  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
   mathjax: false
-
-  # Whether the fade animations on the home page will be enabled
   animate: true
 
   theme:
-    # disableThemeToggle: true
-    defaultTheme: "dark" # dark
+    defaultTheme: "dark"
 
   font:
-    fontSize: 1rem # default: 1rem
-    fontWeight: 400 # default: 400
-    lineHeight: 1.5 # default: 1.5
-    textAlign: left # default: left
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
 
-  # color preference
-  # When using hex codes for colors, quotations must be used along with the # sign
-  # color:
-  #   textColor: "#343a40"
-  #   secondaryTextColor: "#6c757d"
-  #   textLinkColor: "#007bff"
-  #   backgroundColor: "#eaedf0"
-  #   secondaryBackgroundColor: "#64ffda1a"
-  #   primaryColor: "#007bff"
-  #   secondaryColor: "#f8f9fa"
-
-  #   darkmode:
-  #     textColor: "#e4e6eb"
-  #     secondaryTextColor: "#b0b3b8"
-  #     textLinkColor: "#ffffff"
-  #     backgroundColor: "#18191a"
-  #     secondaryBackgroundColor: "#212529"
-  #     primaryColor: "#ffffff"
-  #     secondaryColor: "#212529"
-
-  # If you want to customize the menu, you can change it here
   navbar:
-    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    brandLogo: "/images/my_logo.png" # Logo for the brand | default is the favicon variable
-    showBrandLogo: true # Show brand logo in nav bar | default is true
-    brandName: "Renee Ramjet" # Brand name for the brand | default is the title variable
+    align: ms-auto
+    brandLogo: "/images/my_logo.png"
+    showBrandLogo: true
+    brandName: "Renee Ramjet"
     disableSearch: false
-    # searchPlaceholder: "Search"
     stickyNavBar:
-      enable : false
-      showOnScrollUp : true
+      enable: true
+      showOnScrollUp: true
     enableSeparator: false
     menus:
       disableAbout: false
       disableExperience: false
       disableEducation: false
       disableProjects: false
-      disableAchievements: false
+      disableAchievements: true
       disableContact: false
 
   # Hero
   hero:
     enable: true
-    intro: "Allow me to reintroduce myself...."
-    title: "My Name is Renee..."
+    intro: "Allow me to reintroduce myself..."
+    title: "My Name is Renee."
     subtitle: "I Transform Complexity into Clarity."
-    content: |- 
-      Fueled by coffee and curiosity, I work at the intersection of **data analytics and cloud infrastructure**. I don’t just analyze data—I understand the systems that **collect, secure, and deliver it**.
-      I’ve deployed containerized services on a **Debian-based OVH VPS**, configured secure **NGINX reverse proxies with SSL termination**, and migrated a full **Grafana + Loki observability stack** into production using Docker. These experiences strengthened my ability to think beyond dashboards and approach data from an **end-to-end perspective**.
-      I enjoy transforming raw logs into actionable insight and building systems that are **reliable, secure, and scalable**—because strong analytics begins with strong infrastructure.
-             
+    content: |-
+      Fueled by coffee and curiosity, I work at the intersection of **data analytics, cloud infrastructure, and product development**. I don't just analyze data—I build the systems that **collect, secure, and deliver it**.
+
+      From deploying containerized observability stacks to founding a multi-client **B2B SaaS analytics platform**, I approach every problem from an **end-to-end perspective**: infrastructure up, insights out.
     image: /images/ind3.png
     bottomImage:
       enable: true
-    # roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
-      url: "Renee_Ramjet_Resume2.pdf"
+      url: "/resume.pdf"
       download: false
       newPage: true
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/indiya88
-       # - icon: fab fa-x-twitter
-       #   url: https://example.com
+        - icon: fab fa-linkedin
+          url: https://linkedin.com/in/r-r-b2068b344
       customIcons:
         - icon: /images/my_logo.png
           url: "https://indiya88.github.io/"
@@ -596,242 +92,209 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/hero.gif"
+    image: "/images/ind3.png"
     content: |-
-      
-      I’m the kind of person who genuinely gets excited when a project gets complicated. Whether I’m untangling a messy dataset or deploying a containerized logging pipeline on a cloud server, I thrive when moving pieces finally align.
-      For me, it’s never just about the technical win—it’s about the impact. I’ve seen how reliable systems and clear data can make someone’s day easier, streamline workflows, and strengthen overall security. That’s why I approach problems from both angles: the analytics side and the infrastructure behind it.
+      I'm the kind of person who genuinely gets excited when a project gets complicated. Whether I'm untangling a messy dataset, deploying a containerized logging pipeline, or cold-pitching a business intelligence demo to a local business owner — I thrive when moving pieces finally align.
 
-      During my IT DevOps internship:
-      
-      I deployed and containerized services on a **Debian-based OVH VPS**.
+      For me, it's never just about the technical win. It's about impact. I've seen how reliable systems and clear data can streamline workflows, strengthen security, and make someone's day measurably easier. That's why I approach problems from both angles: the analytics and the infrastructure behind it.
 
-      I configured secure **NGINX reverse proxies with SSL termination**.
+      Currently, I'm finishing my **Data Analytics & AI Diploma** at Trios College while actively building **NUNAKI Intelligence** — a multi-client B2B SaaS business intelligence platform that gives small business owners the kind of data clarity usually reserved for enterprises.
 
-      I migrated a full **Grafana + Loki observability stack** using Docker.
-
-      I implemented a **Dockerized OpenVPN solution with static IP allocation** for an international team.
-
-      These projects deepened my understanding of how data moves through real production environments—from ingestion and logging to visualization and actionable insight.
-      As I continue advancing in Data Analytics, I’m strengthening my expertise in **SQL**, **Python**, **data modeling**, and visualization tools like **Power BI** and **Grafana**.
-      I’m especially interested in roles where I can bridge **data analysis with systems thinking**—turning raw information into actionable insight while understanding the infrastructure that makes it possible.
-      At my core, I love turning chaos into clarity—and building solutions that are not just functional, but **reliable, secure, and scalable**.
-  
     skills:
       enable: true
-      title: "Here are a few technologies I've been working with recently:"
+      title: "Technologies I've been working with:"
       items:
-        - "Linux Admin"
+        - "Python"
+        - "SQL / MySQL"
+        - "Flask"
         - "Docker"
-        - "Virtualization"
-        - "Python Scripting"
-        - "OpenVPN Deployment"
-        - "Loki & Grafana"
+        - "Linux Admin"
         - "NGINX Reverse Proxy"
-        - "Power BI Analytics"
-        - "HashiCorp Vault"
+        - "Grafana & Loki"
+        - "Power BI"
+        - "Chart.js"
         - "Bash Automation"
-        - "Network Security"
-        - "VSCode"
-        
+        - "HashiCorp Vault"
+        - "OpenVPN"
 
   # Experience
   experience:
     enable: true
-    # title: "Custom Name"
     items:
+      - company: "NUNAKI Intelligence"
+        companyUrl: "https://nunakiintelligence.com"
+        jobs:
+          - name: "Founder & Lead Developer"
+            date: "2024 - Present"
+            info:
+              content: Building a multi-client B2B SaaS business intelligence platform from scratch.
+            content: |
+              - **Architected and deployed** a full-stack Flask/Python SaaS platform hosted on Railway with MySQL per-client databases and GitHub auto-deploy.
+              - **Built a multi-client login system** with per-client field mapping architecture, dynamic dashboard sections, and an AI briefing panel powered by Claude (Anthropic).
+              - **Developed a PDF export system** using ReportLab and CairoSVG, plus an in-memory caching layer with per-client cache clearing.
+              - **Designed and launched** the NUNAKI marketing site (Netlify) with Stripe payment integration, pricing tiers, referral program, legal pages, and Zoho-connected contact routing.
+              - **Onboarded demo clients**: Rooted Earth, Staffing Agency, PrimeFloors & Co., Ebram Health Team (209K+ row dataset).
+
       - company: "DigifySEO"
         companyUrl: "https://digifyseo.com/"
         jobs:
-          - name: "DevOps Intern"
+          - name: "Technical Operations / DevOps Intern"
             date: "May 2025 - Aug 2025"
             info:
-              content: Engineered and maintained critical infrastructure—including Vault HA clusters and Loki–Grafana pipelines—to optimize security, system observability, and high availability."
-            content: | 
-              - **Architected** a secure, containerized ecosystem for production services.
-              - **Orchestrated** a resilient **Docker** environment using **NGINX reverse proxy** with **SSL/TLS termination**.
-              - **Implemented** a centralized **Loki + Grafana observability stack** with **Fluent Bit** log forwarding.
-              - **Strengthened infrastructure security** through controlled network access and **VPN implementation**.
-            
-            featuredItems:
-              # fontAwesomeIcons:
-                # - icon: fa-brands fa-react
-                #  url: https://react.dev/
-                #  tooltip: Example tooltip content
-                # - icon: fab fa-x-twitter
-                #  url: https://example.com
-                  # tooltip: Example tooltip content
-             # customIcons:
-              #  - icon: /fav.png
-              #    url: "https://example.com"
-                #  tooltip: Example tooltip content
-          # - name: "Software Developer"
-          #   date: "Jan 2022 - Dec 2023"
-          #  content: "I worked as a software developer. I worked on a project that will be used to help people find the best way to get around the city."
-        
-      - company: "JMR personnel"
+              content: Engineered and maintained critical infrastructure including Vault HA clusters and Loki–Grafana pipelines.
+            content: |
+              - **Architected** a secure, containerized ecosystem for production services on a Debian-based OVH VPS.
+              - **Orchestrated** a resilient Docker environment using NGINX reverse proxy with SSL/TLS termination.
+              - **Implemented** a centralized Loki + Grafana observability stack with Fluent Bit log forwarding.
+              - **Deployed** a Dockerized OpenVPN gateway with certificate-based authentication for a remote international team.
+              - **Engineered** a HashiCorp Vault HA cluster backed by Consul for secrets governance.
+
+      - company: "Freelance Web Design"
+        companyUrl: ""
+        jobs:
+          - name: "Web Designer & Developer"
+            date: "2024 - Present"
+            info:
+              content: Building and cold-pitching demo websites to local businesses across healthcare, trades, and automotive sectors.
+            content: |
+              - **Designed and built** demo websites for local businesses including medical clinics, contractors, and auto detailing shops.
+              - **Cold-pitched** completed demos directly to business owners — designing first, selling second.
+              - **Rebuilt** Classic Dating Agency (classicdatingagency.com) after the original developer delivered a broken site.
+              - **Completed projects include**: Leacock Family Chiropractic, Sheppard Beecroft Medical Clinic, Downtown Doctors Walk-In, 6ixStar Auto, Highway Windows & More, and JMR Personnel Services Ltd.
+
+      - company: "JMR Personnel"
         companyUrl: "http://www.jmrpersonnel.com"
         jobs:
-          - name: "Logistics Coordinator (Remote)"
+          - name: "Logistics & Recruitment Coordinator (Remote)"
             date: "2023 - 2024"
             info:
-              content: Served as a Recruitment and Logistics Coordinator, overseeing workforce deployment and operational scheduling for a high-volume staffing firm.
+              content: Served as a Recruitment and Logistics Coordinator for a high-volume staffing firm.
             content: |
               - **Optimized workforce allocation** using real-time operational data to align staffing with fluctuating site demands.
-              - **Maintained high-integrity database operations**, ensuring accuracy and confidentiality of employee records in a remote environment.
+              - **Maintained high-integrity database operations**, ensuring accuracy and confidentiality of employee records.
               - **Improved scheduling workflows** to increase efficiency across high-volume logistics operations.
-              - **Coordinated cross-site communication**, ensuring seamless resource tracking across geographically dispersed teams.
-             
+
       - company: "Brampton Civic Hospital"
-        companyUrl: "https://www.williamoslerhs.can"
+        companyUrl: "https://www.williamoslerhs.ca"
         jobs:
-        - name: "Clerical Associate/Diagnostic Imaging"
-          date: "2009 - 2022"
-          info:
-            content: Led administrative operations within a high-volume Diagnostic Imaging department, supporting multi-specialty clinical teams in a regulated healthcare environment.
-          content: |
-            - **Managed critical diagnostic data distribution**, ensuring physicians and Emergency departments received time-sensitive reports for high-acuity patients.
-            - **Coordinated multi-departmental operations** across Nuclear Medicine, Mammography, ER, and X-Ray, adapting workflows to meet specialized technical requirements.
-            - **Enforced strict data security protocols**, maintaining full compliance with healthcare privacy regulations.
-            - **Served as the primary point of contact** for after-hours workflows and urgent communications between Film Library and clinical teams.
-            - **Led EMR onboarding and training initiatives**, translating complex administrative processes into structured, actionable training modules.
-      
-      #- company: "Casino Mohawk"
-       # companyUrl: "http://elementscasinomohawk.com"
-        #jobs: 
-        #- name: "Cage/Coin Cashier"
-        #  date: "Oct 2018 - Jul 2022"
-        #  featuredItems:
-          #  fontAwesomeIcons:
-          #    - icon: fa-brands fa-react
-          #      url: https://react.dev/
-          #    - icon: fab fa-x-twitter
-          #      url: https://example.com
-          #  customIcons:
-          #    - icon: /fav.png
-          #      url: "https://example.com"
-        #  content: |
-        #    Managed high-value cash operations and supported employees with accurate till distribution while maintaining operational efficiency in a fast-paced environment.
+          - name: "Clerical Associate — Diagnostic Imaging"
+            date: "2004 - 2022"
+            info:
+              content: Led administrative operations within a high-volume Diagnostic Imaging department supporting multi-specialty clinical teams.
+            content: |
+              - **Managed critical diagnostic data distribution**, ensuring physicians and Emergency departments received time-sensitive reports for high-acuity patients.
+              - **Coordinated multi-departmental operations** across Nuclear Medicine, Mammography, ER, and X-Ray.
+              - **Enforced strict data security protocols**, maintaining full compliance with healthcare privacy regulations.
+              - **Led EMR onboarding and training initiatives**, translating complex administrative processes into structured training modules.
 
-        #    - Managed cash reconciliation for 100+ electronic gaming units, ensuring 100% accuracy in volatile environments.
-        #    - Streamlined till distribution and maintained rigorous audit trails while delivering top-tier service in a high-pressure setting.
-
-      - company: "Brameast FHT"
+      - company: "Brameast Family Health Team"
         companyUrl: "https://www.brameast.ca"
         jobs:
-        - name: "Clerical Administrative Team Lead"
-          date: "2005 - 2022"
-          info:
-            content: Directed front-office operations and clinical data workflows for a 16-physician practice, ensuring secure, efficient coordination in a high-demand healthcare environment.
-          content: |
-            - **Orchestrated high-volume operational workflows** for a 16-physician clinic, ensuring seamless coordination under high-pressure conditions.
-            - **Spearheaded EMR onboarding and training initiatives** while strictly enforcing data security and regulatory compliance standards.
-            - **Functioned as the sole point of contact** for after-hours administrative workflows and urgent system communications.
-            - **Analyzed and refined processes** to eliminate operational bottlenecks and improve overall departmental efficiency.
+          - name: "Clerical Administrative Team Lead"
+            date: "2005 - 2022"
+            info:
+              content: Directed front-office operations and clinical data workflows for a 16-physician practice.
+            content: |
+              - **Orchestrated high-volume operational workflows** for a 16-physician clinic under high-pressure conditions.
+              - **Spearheaded EMR onboarding and training** while enforcing data security and regulatory compliance standards.
+              - **Analyzed and refined processes** to eliminate operational bottlenecks and improve departmental efficiency.
+
   # Education
   education:
     enable: true
-    # title: "Custom Name"
     index: false
     items:
-      - title: "Data Analytics and AI Diploma"
+      - title: "Diploma in Data Analytics & AI"
         school:
           name: "Trios College"
           url: "https://www.trios.com"
-        date: "Current (Expected Graduation April 2027)"
-        # GPA: "4.0"
+        date: "Jan 2026 – Apr 2027 (In Progress)"
         content: |-
-            - Developing expertise across the end-to-end data lifecycle, from data transformation and exploratory analysis (EDA) to applying statistical models that generate actionable insights.
+          - Developing expertise across the end-to-end data lifecycle: data transformation, exploratory analysis (EDA), statistical modeling, and actionable insights.
+          - Coursework includes predictive analytics, machine learning fundamentals (Kelleher et al.), A/B testing, regression, and data visualization.
+          - Designing high-impact dashboards that transform raw metrics into strategic decision-making tools.
 
-            - Designing intuitive, high-impact dashboards that transform raw metrics into strategic insights, enabling data-driven decision-making.
-      
-      - title: "Network Administration and Cybersecurity Diploma"
+      - title: "Diploma in Network Administration & Cybersecurity"
         school:
           name: "Trios College"
-          url: "https://trios.com"
+          url: "https://www.trios.com"
         date: "2024 - 2025"
         GPA: "4.0"
         content: |-
-
           - Completed hands-on training in network configuration, systems administration, and cybersecurity principles.
-          
           - Built and managed secure environments using Windows Server, Linux, virtualization, and cloud-based tools.
 
-         # Extracurricular Activities
-          #  - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          #  - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: false
-          name: "My academic record"
-          url: "https://example.com"
-
-  # Achievements
+  # Achievements disabled — set to false above
   achievements:
     enable: false
-    # title: "Custom Name"
-   # items:
-    #  - title: Google kickstart runner
-     #   content: I solved all problems with optimal solution.
-      #  url: https://example.com
-       # image: /images/achievement.jpg
-     # - title: Facebook Hackathon Winner
-      #  content: Developed a product using Artificial Intelligence.
-       # image: /images/achievement.jpg
-     # - title: Hugo Profile
-      #  content: Developed a theme and getting 1K+ downloads per month.
-      #  url: "https://github.com/gurusabarish/hugo-profile"
-      #  image: /images/achievement.jpg
-     # - title: Microsoft Imagine Runner
-     #   content: We are developed a product which can help others.
-     # - title: Google Summer of Code
-      #  content: Contributed to a open source project.
-       # url: https://example.com
 
-  # projects
+  # Projects
   projects:
     enable: true
-    # title: "Custom Name"
     items:
+      - title: NUNAKI Intelligence — B2B SaaS Platform
+        content: A multi-client business intelligence platform that gives small business owners enterprise-grade analytics. Built end-to-end with Flask/Python, MySQL, Chart.js, and an AI briefing panel powered by Claude (Anthropic). Deployed on Railway with GitHub auto-deploy, per-client data isolation, PDF export, and a Stripe-integrated marketing site.
+        image: /images/projects/nunaki.png
+        featured:
+          name: Live Platform
+          link: https://nunakiintelligence.com
+        badges:
+          - "Flask"
+          - "Python"
+          - "MySQL"
+          - "Chart.js"
+          - "Claude API"
+          - "Railway"
+          - "SaaS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/indiya88
+
       - title: Zero-Trust Observability Pipeline
-        image: /images/projects/observability-stack.png
         content: Designed a secure, containerized observability architecture using NGINX reverse proxies with automated SSL/TLS termination. Deployed a Loki–Grafana stack integrated with Fluent Bit sidecars to centralize log aggregation, analyze system behavior, and transform infrastructure telemetry into actionable operational insights.
+        image: /images/projects/observability-stack.png
         featured:
           name: View Architecture
           link: /projects/observability/
         badges:
           - "Docker"
-          - "NGNIX"
+          - "NGINX"
           - "Grafana"
-          - "Fluentbit"
+          - "Fluent Bit"
           - "Log Analysis"
           - "Observability"
-       # links:
-        #  - icon: fa fa-envelope
-        #    url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-        #  - icon: fab fa-github
-          #  url: https://github.com/gurusabarish/hugo-profile
-         # - icon: fab fa-twitter
-          #  url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
       - title: High Availability Vault Architecture
-        content: Engineered a high-availability HashiCorp Vault cluster backed by Consul and secured behind a multi-stage NGINX reverse proxy with SSL/TLS termination. Implemented Shamir seal initialization and identity-based access controls to strengthen secrets governance and ensure secure data access across distributed services.
+        content: Engineered a high-availability HashiCorp Vault cluster backed by Consul and secured behind a multi-stage NGINX reverse proxy with SSL/TLS termination. Implemented Shamir seal initialization and identity-based access controls for secrets governance across distributed services.
         image: /images/projects/ha-vault.png
         featured:
           name: View Architecture
           link: /projects/ha-vault/
         badges:
-          - "Vault"
-          - "Secret Vault"
+          - "HashiCorp Vault"
+          - "Consul"
           - "SSL/TLS"
-          - "Security"
           - "Secrets Management"
           - "HA Architecture"
         links:
           - icon: fab fa-github
             url: https://github.com/indiya88
 
+      - title: Dockerized OpenVPN Gateway
+        content: Designed and deployed a Dockerized OpenVPN gateway on a Debian server with certificate-based authentication and encrypted tunneling for secure remote infrastructure access. Configured client profiles and static VPN IP assignments to enable a remote team in Mumbai to securely connect to the Canadian server environment.
+        image: /images/projects/vpn-running.png
+        featured:
+          name: View Architecture
+          link: /projects/openVPN/
+        badges:
+          - "OpenVPN"
+          - "Docker"
+          - "Security"
+          - "Access Control"
+          - "Remote Access"
+
       - title: Zero-Trust Log Analytics Pipeline
-        content: Engineered a zero-trust log analytics pipeline by isolating Loki behind an NGINX reverse proxy and enforcing Basic Authentication across all API endpoints. Restricted direct container access using internal Docker networking and validated security controls through real-time log analysis and HTTP status inspection.
+        content: Engineered a zero-trust log analytics pipeline by isolating Loki behind an NGINX reverse proxy and enforcing Basic Authentication across all API endpoints. Restricted direct container access using internal Docker networking and validated security controls through real-time log analysis.
         image: /images/projects/zero-trust.png
         featured:
           name: View Architecture
@@ -839,38 +302,22 @@ params:
         badges:
           - "Grafana"
           - "Linux"
-          - "Fluentbit"
-          - "Devops"
+          - "Fluent Bit"
+          - "DevOps"
           - "Log Parsing"
           - "Data Analysis"
-       # links:
-        #  - icon: fab fa-github
-        #    url: https://github.com/gurusabarish/HugoProfileV2
 
-      - title: Dockerized OpenVPN Gateway
-        content: "Designed and deployed a Dockerized OpenVPN gateway on a Debian server, implementing certificate-based authentication and encrypted tunneling for secure remote infrastructure access. Configured client profiles and assigned VPN IP addresses to enable a remote team in Mumbai to securely connect to the Canadian server environment."
-        image: /images/projects/vpn-running.png
-        featured:
-          name: View Architecture
-          link: /projects/openVPN/
-        badges: 
-          - "OpenVPN"
-          - "Docker"
-          - "Security"
-          - "Access Control"
-          - "Remote Access"  
-  #Contact
+  # Contact
   contact:
     enable: true
-    # title: "Custom Name"
-    content: Let’s connect. Whether it’s an opportunity, a project, or a conversation about tech, I’m ready.
+    content: Let's connect. Whether it's an opportunity, a project, or a conversation about tech — I'm ready.
     btnName: Send Message
     btnLink: mailto:r.ram888@outlook.com
     formspree:
-      enable: true # `contact.email` value will be ignored
-      formId: xvzbnyvz # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+      enable: true
+      formId: xvzbnyvz
       emailCaption: "Enter Your Email"
-      messageCaption: "How Can I help You?"
+      messageCaption: "How Can I Help You?"
       messageRows: 5
 
   footer:
@@ -883,15 +330,10 @@ params:
     socialNetworks:
       github: https://github.com/indiya88
       linkedin: https://linkedin.com/in/r-r-b2068b344
-     # twitter: https://twitter.com
-     # instagram: https://instagram.com
-     # facebook: https://facebook.com
 
-  # List pages like blogs and posts
   listPages:
     disableFeaturedImage: false
 
-  # Single pages like blog and post
   singlePages:
     socialShare: true
     readTime:
@@ -902,7 +344,6 @@ params:
     tags:
       openInNewTab: true
 
-  # For translations
   terms:
     read: "Read"
     toc: "Table Of Contents"
@@ -913,6 +354,3 @@ params:
     article: "Jan 2, 2006"
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
-
-  #customScripts: -| # You can add custom scripts which will be added before </body> tag
-  #  <script type="text/javascript"><!-- any script here --></script>

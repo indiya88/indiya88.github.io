@@ -5,7 +5,7 @@ date: 2026-03-02
 draft: false
 tags: ["NGINX", "Loki", "Docker", "Security", "Log Analysis", "Zero Trust"]
 # This hides the extra "Overview" card from your homepage
-_build:
+build:
   list: never
   render: always
 ---

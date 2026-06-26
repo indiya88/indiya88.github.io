@@ -5,7 +5,7 @@ date: 2026-03-10
 draft: false
 tags: ["SQL", "Data Analysis", "Database Design", "Business Intelligence"]
 
-_build:
+build:
   list: never
   render: always
 ---

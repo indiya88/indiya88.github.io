@@ -5,7 +5,7 @@ date: 2026-03-02
 draft: false
 tags: ["Docker", "NGINX", "Grafana", "Loki", "Fluent Bit", "Observability", "Log Analysis"]
 # This prevents the duplicate card from showing on the front page
-_build:
+build:
   list: never
   render: always
 ---

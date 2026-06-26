@@ -5,7 +5,7 @@ date: 2026-03-02
 draft: false
 tags: ["Vault", "Consul", "NGINX", "Security", "SSL/TLS", "HA Architecture"]
 # This prevents the duplicate card from showing on the front page
-_build:
+build:
   list: never
   render: always
 ---
